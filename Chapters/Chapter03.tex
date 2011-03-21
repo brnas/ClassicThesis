@@ -280,7 +280,7 @@ Der Zweck von Prototypen ist aber das Erforschen der Eigenschaften des Endproduk
 
 Eine Gefahr, die Prototyping mit sich bringen kann, ist die Wahl eines falschen Anfangsdesigns. Wenn man mit einem schlechten Design-Konzept beginnt Prototypen zu erstellen, kann es sein, dass man am Ende nur eine >>verschönerte<< Version der schlechten Idee bekommt (vgl. \ref{sssec:rightDesign} \nameref{sssec:rightDesign}).
 
-\medskip Die Vorraussetzungen, um Prototyping Methoden richtig einsetzen zu können sind also:
+\medskip Die Voraussetzungen, um Prototyping Methoden richtig einsetzen zu können sind also:
 
 \begin{enumerate}
 	\item Verständnis über die Elemente, die neu designed gehören und wie man sie verbessern kann und
@@ -298,15 +298,15 @@ Digitale Prototypen (siehe \autoref{fig:safferDigitalPrototype}) können verschi
 
 Ein Vorteil der daraus entsteht, ist dass digitale Prototypen leicht veröffentlicht werden können. Designer können sie einfach aufs Web stellen oder auf Disks verbreiten, um Benutzern die Möglichkeit zu bieten, die Prototypen egal wo sie sind auszuprobieren. 
 
+\subsubsection{Physikalische Prototypen} \index{Prototyping!Physikalisch}
+Physikalische Prototypen (siehe \autoref{fig:safferPhysicalPrototype}) können simple Teile eines Designs (wie zum Beispiel einzelne Schalter oder Wahltasten) bis hin zu kompletten physikalischen Umgebungen schaffen. Wie aber auch bei anderen Prototypen kann sich dabei die Funktionalität und Beschaffenheit unterscheiden. Ein Gerät beispielsweise kann aus exakt denselben Materialien wie das Endprodukt erstellt werden (z.B. Plastik oder Metall), oder durch Materialien wie Holz oder Ton angeglichen werden. 
+
 \begin{figure}
 	\begin{center}
         {\includegraphics[width=\linewidth]{gfx/safferDigitalPrototype}}
 	\end{center}
 		\caption[Digitale Prototypen. \newline \citep{Saffer:2007}]{Digitale Prototypen können Formen in verschiedener Detailstufen annehmen und leicht über das Internet verbreitet werden.}\label{fig:safferDigitalPrototype}
 \end{figure}
-
-\subsubsection{Physikalische Prototypen} \index{Prototyping!Physikalisch}
-Physikalische Prototypen (siehe \autoref{fig:safferPhysicalPrototype}) können simple Teile eines Designs (wie zum Beispiel einzelne Schalter oder Wahltasten) bis hin zu kompletten physikalischen Umgebungen schaffen. Wie aber auch bei anderen Prototypen kann sich dabei die Funktionalität und Beschaffenheit unterscheiden. Ein Gerät beispielsweise kann aus exakt denselben Materialien wie das Endprodukt erstellt werden (z.B. Plastik oder Metall), oder durch Materialien wie Holz oder Ton angeglichen werden. 
 
 \begin{figure}
 	\begin{center}
@@ -348,14 +348,16 @@ Durch sie werden anfangs Hintergründe bzw.  Hintergrundsmasken\index{Hintergrun
 
 Nachdem die Hintergründe bzw. Masken\index{Masken|see{Hintergrundsmasken}} erstellt wurden, ist es nötig alle Interface Widges, wie \emph{buttons}, \emph{checkboxes}, \emph{dialog boxes}, \emph{text fields}, \emph{lists}, \emph{cursors} etc. zu erstellen. Interface Widges helfen später im User Testing die Interaktivität zu simulieren \citep{Snyder:2003}.
 
+\medskip Sie sollten deswegen so gut wie möglich vorbereitet werden, um lange Wartezeiten im Testing zu vermeiden. Im Allgemeinen ist es natürlich auch erlaubt, Screenshots von Elementen (inklusive Hintergrund) zu machen, jedoch muss man sich dabei immer fragen wie viel man vielleicht nachträglich ändern will. Meistens ist es schneller, Elemente selbst zu zeichnen. \autoref{fig:snyderPaperPrototype} zeigt Vorbereitungselemente aus den verschiedensten Materialien und deren möglichen Einsatzzweck \citep{Snyder:2003}.
+
+\medskip Nachdem ein Prototyp fertig gestellt wurde, sollte er logischerweise auch Einsatz finden. Das richtige Publikum dafür sind die User, die das Endprodukt benutzen werden. Man nennt diesen Prozess auch User Testing, der im folgenden Punkt beschrieben wird.
+
 \begin{figure}
 	\begin{center}
         {\includegraphics[width=.7\linewidth]{gfx/snyderMasks}}
 	\end{center}
 		\caption[Hintergrundmasken \newline \citep{Snyder:2003}]{Hintergrundmasken werden im ersten Schritt von Paper Prototyping erstellt. Besonders bei kleinen Geräten kann es helfen, den nutzbaren Bereich einzugrenzen, da hier meist jeder Pixel zählt.}\label{fig:snyderMasks}
 \end{figure}
-
-\medskip Sie sollten deswegen so gut wie möglich vorbereitet werden, um lange Wartezeiten im Testing zu vermeiden. Im Allgemeinen ist es natürlich auch erlaubt, Screenshots von Elementen (inklusive Hintergrund) zu machen, jedoch muss man sich dabei immer fragen wie viel man vielleicht nachträglich ändern will. Meistens ist es schneller, Elemente selbst zu zeichnen. \autoref{fig:snyderPaperPrototype} zeigt Vorbereitungselemente aus den verschiedensten Materialien und deren möglichen Einsatzzweck \citep{Snyder:2003}.
 
 \begin{figure}
 	\myfloatalign
@@ -366,8 +368,7 @@ Nachdem die Hintergründe bzw. Masken\index{Masken|see{Hintergrundsmasken}} erst
 	\includegraphics[width=.48\linewidth]{gfx/snyderPaperPrototype}} \\
 	\caption[Paper Prototyping \newline \citep{Sagmeister:2008}]{Papierelemente (a) für Interface Widges können durch einfache Materialien wie Papier und Stifte erstellt werden. Sie sollten vor dem User Testing vorbereitet werden, um lange Wartezeiten zu vermeiden. Ein Papier Prototyp, wie in (b), imitiert zwar nur das Enprodukt, bietet dem User aber die volle Interaktivität. Der Benutzer interagiert dabei direkt mit dem Prototypen als wäre es ein Touch Screen.}\label{fig:snyderPaperPrototype}
 \end{figure}
-
-\medskip Nachdem ein Prototyp fertig gestellt wurde, sollte er logischerweise auch Einsatz finden. Das richtige Publikum dafür sind die User, die das Endprodukt benutzen werden. Man nennt diesen Prozess auch User Testing, der im folgenden Punkt beschrieben wird.
+\clearpage
 
 \subsection{(User) Testing} \index{Testing} \index{User Testing|see{Testing}}
 Der oft verwendete Begriff User Testing ist eigentlich eine Fehlbezeichnung. Getestet werden natürlich nicht die User sondern das Produkt bzw. das Service. 

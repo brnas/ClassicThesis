@@ -107,15 +107,16 @@ Die erstellten Prototypen vor der Implementierung des Programms, ermöglichten d
 
 \medskip Es bestand außerdem die Möglichkeit, \scribbler innerhalb einer Gruppe von fünf Personen zu testen, die an einem bestimmten Design arbeiteten und dazu den in \autoref{sec:ausgangssituation} beschriebenen Meetingraum vom Institut nutzten (siehe \autoref{fig:scribblerUserTest}).
 
+\medskip Nach Fertigstellung der Betaversion konnte \scribbler zusätzlich am Beginners-Day\footnote{Der Beginners-Day ist eine Infoveranstaltung für alle Studienanfängerinnen und Studienanfänger in den Informatik-, Wirtschaftsinformatik- und Lehramtsstudien. \citep{TU:2010}} der TU Wien vorgeführt und mit vielen erstsemestrigen Studenten getestet werden. Abschließend konnten auch ausführliche Tests mit Designern durchgeführt werden, die in \autoref{sec:userReview} ausführlich beschrieben sind.
+
+\clearpage
+\section{Scribbler at a Glance} \index{Scribbler!at a Glance}
+Durch die verschiedenen Designmethoden veränderte sich die Funktionalität von \scribbler öfters. Aus diesem Grund wird das Konzept erst in diesem Kapitel angeführt.
+
 \begin{figure}
 	        {\includegraphics[width=1\linewidth]{gfx/scribblerUserTest}}
 		\caption[Scribblertesting in einer Designsession]{Scribblertesting in einer Designsession. Fünf Personen überarbeiten mittels Scribbler ein Designvorschlag.}\label{fig:scribblerUserTest}
 \end{figure}
-
-\medskip Nach Fertigstellung der Betaversion konnte \scribbler zusätzlich am Beginners-Day\footnote{Der Beginners-Day ist eine Infoveranstaltung für alle Studienanfängerinnen und Studienanfänger in den Informatik-, Wirtschaftsinformatik- und Lehramtsstudien. \citep{TU:2010}} der TU Wien vorgeführt und mit vielen erstsemestrigen Studenten getestet werden. Abschließend konnten auch ausführliche Tests mit Designern durchgeführt werden, die in \autoref{sec:userReview} ausführlich beschrieben sind.
-
-\section{Scribbler at a Glance} \index{Scribbler!at a Glance}
-Durch die verschiedenen Designmethoden veränderte sich die Funktionalität von \scribbler öfters. Aus diesem Grund wird das Konzept erst in diesem Kapitel angeführt.
 
 \medskip \scribbler ermöglicht neben der herkömmlichen Arbeit an einem Desktop (\acs{WIMP}) System, mittels Stiften auf jedes beliebige Programmfenster zu zeichnen. Das System läuft im Hintergrund und aktiviert sich bei Bedarf. Es unterscheidet dabei generell zwei Hauptmodi: den Zeichen- und den Mausmodus. In letzterem kann die Maus wie gewohnt zur Navigation zwischen Programmfenster eingesetzt werden. Die Verwendung eines Tabletstifts hingegen wechselt in den Zeichenmodus. Die Benutzer können so auf das momentan aktive Fenster einer Drittapplikation >>kritzeln<<. Da besonders geübte Tabletbenutzer die Stifte auch als Ersatz für die Maus verwenden, ermöglicht \scribbler auch das explizite Wechseln der beiden Modi durch Drücken einer Tablettaste.
 
@@ -169,7 +170,7 @@ Stifte werden vom System erst dann wahrgenommen, wenn die Stiftspitze ein bis ei
 \subsection{Grafisches User Interface} \index{Scribbler!GUI}
 \scribbler ist ein Dienst, der im Hintergrund läuft und lediglich das Betriebssystem an Funktionalität anreichert. Daher hat es ein sehr subtiles \ac{GUI}, das nahezu vollständig transparent bleibt und Benutzer nicht von ihrer eigentlichen Arbeit ablenkt. Es besteht nur aus einem sternförmigen Icon in der Systemleiste des Betriebssystems, siehe \picref{fig:scribblerIcon}. Dahinter verbirgt sich ein Menü, dargestellt in \picref{fig:scribblerMenu}, das die Funktionen von \scribbler zur Verfügung stellt. Diese können fast alle auch über die Tasten am Tablett durchgeführt werden. Eine Ausnahme bilden der erste Menüeintrag, der \scribbler temporär in einen Standby-Zustand und somit inaktiv setzt, und der letzte Menüeintrag, der das Programm vollständig beendet.
 
-\medskip Benutzer sollen das Programm gar nicht bemerken, müssen aber dennoch ein gewisses Maß an Feedback erhalten, um sinnvoll mit \scribbler arbeiten zu können. Dass der Zeichenmodus aktiv ist, wird Benutzern beispielsweise dadurch mitgeteilt, dass statt dem normalen Pfeil-Cursor (vgl. \picref{fig:scribblerMousePosition}) ein Fadenkreuz-Cursor (vgl. \autoref{fig:scribblerSketching}) angezeigt wird. Zusätzlich markiert \scribbler das aktive Fenster (einer Drittapplikation) mit einem blauen Rahmen. Den Benutzern wird so kommuniziert, welchem Fenster ihre Zeichnungen zugeordnet werden. Man kann sich also vergewissern, ob tatsächlich auf das gewünschte Fenster gezeichnet wird.
+\medskip Benutzer sollen das Programm gar nicht bemerken, müssen aber dennoch ein gewisses Maß an Feedback erhalten, um sinnvoll mit \scribbler arbeiten zu können. Dass der Zeichenmodus aktiv ist, wird Benutzern beispielsweise dadurch mitgeteilt, dass statt dem normalen Pfeil-Cursor (vgl. \picref{fig:scribblerMousePosition}) ein Faden-kreuz-Cursor (vgl. \autoref{fig:scribblerSketching}) angezeigt wird. Zusätzlich markiert \scribbler das aktive Fenster (einer Drittapplikation) mit einem blauen Rahmen. Den Benutzern wird so kommuniziert, welchem Fenster ihre Zeichnungen zugeordnet werden. Man kann sich also vergewissern, ob tatsächlich auf das gewünschte Fenster gezeichnet wird.
 
 \medskip \emph{Scribblers} herausragendstes Feature, das es von allen bisherigen ähnlichen Systemen abhebt, ist der >>Sticky Mode<<. Diese Funktion bewirkt, dass Zeichnungen immer dort bleiben, wo sie hingehören. Wenn ein Benutzer auf ein Fenster zeichnet und dieses nachträglich verschiebt, erkennt \scribbler die Änderung der Fensterposition und verschiebt die Zeichnungen ebenfalls, sodass sie wieder genau dort über dem Fenster liegen, wo sie ursprünglich gezeichnet wurden.
 
@@ -325,6 +326,7 @@ Peter könnte sich vorstellen, das Tool im Unterricht im kollaborativen Setting 
 
 Jedem Stift eine eigene Farbe zuzuweisen gefällt Peter gut. Für seine Zwecke benötigt er mehr als nur eine Farbe und dies erscheint ihm eine gute Lösung. Er weist jedoch auch darauf hin, dass er gerne Kontextmenüs in Zeichenprogrammen verwendet und so schneller zwischen verschiedenen Farben wechseln kann.
 
+\medskip
 \begin{extract}[Jedem Stift wird eine eigene Farbe zugewiesen.]
 	{
 		\myfloatalign
@@ -381,6 +383,7 @@ Als Produktdesigner zeichnet Peter sehr viel und er tut dies auch während Bespr
 
 Deshalb sieht er für \scribbler gute Einsatzmöglichkeiten bei Brainstormings und in Ideenfindungsphasen. Dadurch können Konzepte und Ideen schnell und effizient vermittelt und Inspiration gefördert werden. Ebenfalls denkbar wäre für ihn der Einsatz von \scribbler in Graphic-Recording-Meetings. Es handelt sich dabei um Sitzungen, bei denen eine Person jegliche verbale Kommunikation in der Gruppe als Skizzen festhält.
 
+\medskip
 \begin{extract}[Ein Einsatz bei Graphic-Recordings wäre denkbar.]
 	{
 		\myfloatalign
@@ -403,6 +406,7 @@ Als \scribbler von der Arbeitsgruppe am Institut für Gestaltungs- und Wirkungsf
 
 \medskip Es wurde sehr schnell deutlich, dass die Einsatzmöglichkeiten von \scribbler begrenzt sind. Die wenigen Zeichenfunktionen reichen lediglich für grobe Skizzen und Kritzeleien aus. \scribbler muss hier gezielt an Funktionalität angereichert werden und zumindest optional Features wie Strichstärke oder Druckempfindlichkeit anbieten.
 
+\medskip
 \begin{extract}[Die Einsatzmöglichkeiten sind begrenzt.]
 	{
 		\myfloatalign
@@ -478,6 +482,7 @@ Die Entscheidung, Linien in \scribbler als Vektorobjekte zu speichern, ging mit 
 \subsubsection{Wünsche der Benutzer}
 Offensichtliche Verbesserungen, wie Druckempfindlichkeit, Strichstärke und konkretere Zeichenmöglichkeiten wurden von fast allen Teilnehmern angesprochen. Zusätzlich gab es einige Einwände und Ideen zu Features, die das Nutzungserlebnis von \scribbler verbessern könnten. Essenziell für ein effizientes Arbeiten mit \scribbler erscheint die Möglichkeit, Zeichnungen nachträglich am Bildschirm noch verschieben zu können. So können erst Ideen generiert und danach Ordnung und Struktur geschaffen werden.
 
+\medskip
 \begin{extract}[Es wäre gut, wenn man Zeichnungen verschieben könnte.]
 	{
 		\myfloatalign
@@ -537,8 +542,8 @@ Das derzeit schwerwiegenste Problem von \scribbler ist jedoch die Tatsache, dass
 
 Ebenso wurde deutlich, dass besonders Benutzer mit wenig Tableterfahrung, Probleme bei der Benutzung der Buttons an den Tabletstiften haben.
 
-\begin{figure}
-	        {\includegraphics[bb=2cm 0cm 14.39cm 23.01cm]{gfx/scribblerAnforderungsauswertung}}
+\begin{figure}%bb=2cm 0cm 14.39cm 23.01cm
+	        {\includegraphics[bb=0cm 0cm 14.39cm 23.01cm]{gfx/scribblerAnforderungsauswertung}}
 		\caption[Anforderungsauswertung für Scribbler]{Anforderungsauswertung für Scribbler. Alle umgesetzten Anforderungen sind in Grün gehalten. (Noch) nicht umgesetzte Anforderungen sind rot markiert.}\label{fig:scribblerAnforderungsauswertung}
 \end{figure}
 
